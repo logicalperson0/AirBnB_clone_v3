@@ -17,7 +17,7 @@ def state_get_all():
     state_list = []
     state_obj = storage.all("State")
     for obj in state_obj.values():
-        state_list.append(obj.to_json())
+        state_list.append(obj.to_dict())
 
     return jsonify(state_list)
 
@@ -36,7 +36,7 @@ def state_create():
 
     new_state = State(**state_json)
     new_state.save()
-    resp = jsonify(new_state.to_json())
+    resp = jsonify(new_state.to_dict())
     resp.status_code = 201
 
     return resp
@@ -55,7 +55,7 @@ def state_by_id(state_id):
     if fetched_obj is None:
         abort(404)
 
-    return jsonify(fetched_obj.to_json())
+    return jsonify(fetched_obj.to_dict())
 
 
 @app_views.route("/states/<state_id>",  methods=["PUT"], strict_slashes=False)
@@ -75,7 +75,7 @@ def state_put(state_id):
         if key not in ["id", "created_at", "updated_at"]:
             setattr(fetched_obj, key, val)
     fetched_obj.save()
-    return jsonify(fetched_obj.to_json())
+    return jsonify(fetched_obj.to_dict())
 
 
 @app_views.route("/states/<state_id>", methods=["DELETE"],
