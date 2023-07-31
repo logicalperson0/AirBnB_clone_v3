@@ -166,6 +166,19 @@ Third part of Airbnb:
 
 This is to implement restful api
 
+The tasks
+=========
+
+More Info
+Install Flask
+$ pip3 install Flask
+
+0. Restart from scratch!
+For this project you will fork this codebase:
+
+Update the repository name to AirBnB_clone_v3
+
+
 
 ## License
 Public Domain. No copy write protection. 
