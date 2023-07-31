@@ -4,7 +4,7 @@ route for handling Amenity objects and operations
 """
 from flask import jsonify, abort, request
 from api.v1.views import app_views
-from model import storage
+from models import storage
 from models.amenity import Amenity
 
 
