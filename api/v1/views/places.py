@@ -5,6 +5,7 @@ route for handling Place objects and operations
 from flask import jsonify, abort, request
 from api.v1.views import app_views
 from models import storage
+from models import City
 from models.place import Place
 
 
