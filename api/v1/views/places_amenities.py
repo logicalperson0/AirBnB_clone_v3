@@ -64,7 +64,7 @@ def unlink_amenity_from_place(place_id, amenity_id):
         abort(404)
     else:
         resp = jsonify({})
-        resp.status_code = 201
+        resp.status_code = 200
         return resp
 
 
