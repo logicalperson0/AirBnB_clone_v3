@@ -181,5 +181,9 @@ Update the repository name to AirBnB_clone_v3
 using the unittest module, python3 -m unittest discover tests 2>&1 | tail -1 for file storage
 and HBNB_ENV=test HBNB_MYSQL_USER=hbnb_test HBNB_MYSQL_PWD=hbnb_test_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db python3 -m unittest discover tests 2>&1 /dev/null | tail -n 1 for DB storage
 
+Update DBStorage and FileStorage in the branch storage_get_count, then create pull request on GitHub.com and then be reviewed to merge!
+
+
+
 ## License
 Public Domain. No copy write protection. 
